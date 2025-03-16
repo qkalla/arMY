@@ -101,5 +101,5 @@ class MainActivity : FragmentActivity() {
 
     private fun fetchBusRoutes() {
         // Implement fetching and displaying bus routes in AR (future functionality)
-    }
+     }
 }
