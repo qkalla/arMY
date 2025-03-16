@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- AR Fragment for displaying AR content -->
+    <fragment
+        android:id="@+id/ar_fragment"
+        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_nav_buttons"/>
+
+    <!-- Bottom Navigation buttons -->
+    <LinearLayout
+        android:id="@+id/bottom_nav_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#000000"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true">
+
+        <!-- Taxi Button -->
+        <Button
+            android:id="@+id/taxi_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Taxi"
+            android:textColor="@android:color/white"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <!-- Food Button -->
+        <Button
+            android:id="@+id/food_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Food"
+            android:textColor="@android:color/white"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <!-- Bus Button -->
+        <Button
+            android:id="@+id/bus_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bus"
+            android:textColor="@android:color/white"
+            android:background="?android:attr/selectableItemBackground"/>
+    </LinearLayout>
+</RelativeLayout>
